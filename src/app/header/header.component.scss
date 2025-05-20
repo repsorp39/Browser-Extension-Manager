@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    div:nth-child(2){
+        padding: 10px 10px 7px 10px;
+        border-radius: 10px;
+
+        img{
+            width: 20px;
+        }
+    }
+
+}
+
+.theme{
+    border: 2px solid;
+    cursor: pointer;
+    &:hover{
+        background-color: hsl(225,23%,24%) !important;
+    }
+    &:focus{
+        border-color: hsl(3,71%,56%) !important;
+    }
+}
+
+.logo img{
+    width: 150px;
+}
+
+.dark-mode {
+    header {
+        background-color: hsl(226,25%,17%);
+    }
+
+    .theme{
+        border-color: hsl(225, 23%, 24%);
+    }
+}
+
+.light-mode {
+    header {
+        background-color: hsl(200, 60%, 99%);
+    }
+
+    .theme{
+        border-color:  hsl(200, 60%, 99%);
+        background-color:hsl(0, 0%, 93%);
+    }
+}

@@ -1,0 +1,28 @@
+<li class="single-extension">
+    <section>
+        <div> <img [src]="extension.logo" [alt]="extension.name"> </div>
+        <div>
+            <h3> {{ extension.name }} </h3>
+            <p> {{ extension.description }} </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <button 
+                tabindex="-1"
+                (click)="handleDeletion()"
+            > Remove 
+        </button>
+        </div>
+        <div> 
+            <label class="switch">
+                <input 
+                    type="checkbox" 
+                    [checked]="extension.isActive"
+                    (change)="handleToogle()"
+                >
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </section>
+</li>

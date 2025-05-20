@@ -1,0 +1,11 @@
+<section>
+	<header>
+		<div class="logo">
+			<img src="/assets/images/logo.svg" alt="logo">
+		</div>
+		<div tabindex="-1" class="theme" (click)="toogleTheme()">
+			<img [src]="theme.isDarkMode?'/assets/images/icon-sun.svg':'/assets/images/icon-moon.svg'" alt="">
+		</div>
+	</header>
+	<app-navbar />
+</section>

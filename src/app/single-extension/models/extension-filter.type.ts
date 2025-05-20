@@ -1,0 +1,1 @@
+export type extensionFilter = 'all'|'active'|'inactive';

@@ -1,0 +1,13 @@
+.extension-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+
+    @media screen and (max-width:650px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

@@ -1,0 +1,10 @@
+<section class="extension-list">
+    <ul>
+        @for (extension of extensions; track extension.id) {
+            <app-single-extension 
+            [extension]="extension" 
+            [updateList]="getExtensionList"
+            />
+          }
+    </ul>
+</section>
