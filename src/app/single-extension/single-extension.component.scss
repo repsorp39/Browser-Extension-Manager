@@ -10,12 +10,9 @@
     }
 
     @media screen and (max-width:430px) {
-        width: 300px;
+        width: 250px;
     }
 
-    @media screen and (max-width:1500px) {
-        width: 320px;
-    }
     section{
         display: flex;
         justify-content: space-between;

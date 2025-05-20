@@ -4,6 +4,7 @@ $dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
 
 main{
     min-height: 100vh;
+
 }
 
 .main-holder{
@@ -18,6 +19,13 @@ main{
 
     @media screen and (max-width:1400px) {
         width: 80%;
+    }
+
+    @media screen and (max-width:650px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
